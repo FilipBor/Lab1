@@ -53,8 +53,8 @@ int main(){
         float discriminant = powf(b,2)-4*a*c; // variable to store and compute discriminant value
       if(discriminant > 0) // course of action regarding the value of discriminant
       {
-            float x1 = (-b+discriminant)/(2*a); // variable to compute and store x1 value
-            float x2 = (-b-discriminant)/(2*a); // variable to compute and store x2 value
+            float x1 = (-b+sqrtf(discriminant))/(2*a); // variable to compute and store x1 value
+            float x2 = (-b-sqrtf(discriminant))/(2*a); // variable to compute and store x2 value
             std::cout<<"Your x values are: "<< x1; std::cout <<" and "<< x2 <<std::endl; // printing both x1 and x2 values
         }
       else if(discriminant == 0) // course of action regarding the value of discriminant
